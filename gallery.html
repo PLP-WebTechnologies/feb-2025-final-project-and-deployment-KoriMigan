@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bloom Social Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Bloom</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-header">
+            <h1>Our Gallery</h1>
+            <p>Memories from our wonderful events</p>
+        </section>
+
+        <section class="gallery-section">
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="social">Social Gatherings</button>
+                <button class="filter-btn" data-filter="workshops">Workshops</button>
+                <button class="filter-btn" data-filter="special">Special Events</button>
+            </div>
+
+            <div class="gallery-container">
+                <!-- Social Gathering Images -->
+                <div class="gallery-item" data-category="social">
+                    <img src="https://picsum.photos/600/600?random=21" alt="Summer Picnic">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Summer Picnic 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="social">
+                    <img src="https://picsum.photos/600/600?random=22" alt="Game Night">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Monthly Game Night</p>
+                    </div>
+                </div>
+                
+                <!-- Workshop Images -->
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://picsum.photos/600/600?random=23" alt="Pottery Class">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Pottery Workshop</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://picsum.photos/600/600?random=24" alt="Cooking Class">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Italian Cooking Class</p>
+                    </div>
+                </div>
+                
+                <!-- Special Event Images -->
+                <div class="gallery-item" data-category="special">
+                    <img src="https://picsum.photos/600/600?random=25" alt="Annual Gala">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Annual Bloom Gala</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="special">
+                    <img src="https://picsum.photos/600/600?random=26" alt="Holiday Party">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Winter Holiday Party</p>
+                    </div>
+                </div>
+                
+                <!-- More Social Images -->
+                <div class="gallery-item" data-category="social">
+                    <img src="https://picsum.photos/600/600?random=27" alt="Brunch Gathering">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Sunday Brunch Club</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="social">
+                    <img src="https://picsum.photos/600/600?random=28" alt="Hiking Trip">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Weekend Hiking Trip</p>
+                    </div>
+                </div>
+                
+                <!-- More Workshop Images -->
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://picsum.photos/600/600?random=29" alt="Painting Class">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Wine & Paint Night</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="workshops">
+                    <img src="https://picsum.photos/600/600?random=30" alt="Photography Class">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Photography Workshop</p>
+                    </div>
+                </div>
+                
+                <!-- More Special Event Images -->
+                <div class="gallery-item" data-category="special">
+                    <img src="https://picsum.photos/600/600?random=31" alt="Anniversary Party">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>5th Anniversary Celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="special">
+                    <img src="https://picsum.photos/600/600?random=32" alt="Charity Event">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                        <p>Annual Charity Fundraiser</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to see photos from our upcoming events</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="subscription-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Bloom</h2>
+                <p>Connect. Create. Celebrate.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bloom Social Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.gallery-filter .filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Simple lightbox functionality
+            const galleryOverlays = document.querySelectorAll('.gallery-overlay');
+            galleryOverlays.forEach(overlay => {
+                overlay.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const imgSrc = this.parentElement.querySelector('img').src;
+                    const imgAlt = this.parentElement.querySelector('img').alt;
+                    
+                    // Create lightbox
+                    const lightbox = document.createElement('div');
+                    lightbox.className = 'lightbox';
+                    lightbox.innerHTML = `
+                        <div class="lightbox-content">
+                            <img src="${imgSrc}" alt="${imgAlt}">
+                            <span class="lightbox-close">&times;</span>
+                            <p>${this.querySelector('p').textContent}</p>
+                        </div>
+                    `;
+                    
+                    document.body.appendChild(lightbox);
+                    
+                    // Close lightbox
+                    const closeBtn = lightbox.querySelector('.lightbox-close');
+                    closeBtn.addEventListener('click', function() {
+                        lightbox.remove();
+                    });
+                    
+                    lightbox.addEventListener('click', function(e) {
+                        if (e.target === lightbox) {
+                            lightbox.remove();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Additional styles for lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            animation: fadeIn 0.3s forwards;
+        }
+        
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-content img {
+            max-height: 80vh;
+            max-width: 100%;
+            border-radius: var(--radius);
+        }
+        
+        .lightbox-content p {
+            color: var(--color-white);
+            text-align: center;
+            margin-top: 1rem;
+            font-family: var(--font-display);
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--color-white);
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
+        /* Gallery filter styles */
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-filter .filter-btn {
+            background-color: transparent;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem 0.5rem;
+            cursor: pointer;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            color: var(--color-text);
+            transition: var(--transition);
+            border-bottom: 2px solid transparent;
+        }
+        
+        .gallery-filter .filter-btn:hover,
+        .gallery-filter .filter-btn.active {
+            color: var(--color-accent);
+            border-bottom: 2px solid var(--color-accent);
+        }
+        
+        /* Gallery overlay text */
+        .gallery-overlay p {
+            margin-top: 0.5rem;
+            font-size: 1.1rem;
+            color: var(--color-white);
+            font-family: var(--font-display);
+        }
+    </style>
+</body>
+</html>

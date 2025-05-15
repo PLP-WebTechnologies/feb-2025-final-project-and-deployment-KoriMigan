@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Bloom Social Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Bloom</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-header">
+            <h1>Upcoming Events</h1>
+            <p>Join us for unforgettable experiences and connections</p>
+        </section>
+
+        <section class="events-section">
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="social">Social</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="special">Special Events</button>
+            </div>
+
+            <div class="events-list">
+                <div class="event-item" data-category="social">
+                    <div class="event-item-image">
+                        <img src="https://picsum.photos/600/400?random=1" alt="Summer Picnic">
+                    </div>
+                    <div class="event-item-content">
+                        <h3>Summer Picnic Social</h3>
+                        <div class="event-meta">
+                            <div><i class="fas fa-calendar-alt"></i> May 22, 2025</div>
+                            <div><i class="fas fa-clock"></i> 2:00 PM - 6:00 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Riverside Park</div>
+                        </div>
+                        <p>Join us for a relaxing afternoon in the park with games, food, and great company. Bring your favorite picnic dish to share!</p>
+                        <div class="event-buttons">
+                            <a href="#" class="btn">RSVP Now</a>
+                            <a href="#" class="btn btn-outline">More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="workshop">
+                    <div class="event-item-image">
+                        <img src="https://picsum.photos/600/400?random=2" alt="Wine & Paint Night">
+                    </div>
+                    <div class="event-item-content">
+                        <h3>Wine & Paint Night</h3>
+                        <div class="event-meta">
+                            <div><i class="fas fa-calendar-alt"></i> June 18, 2025</div>
+                            <div><i class="fas fa-clock"></i> 6:30 PM - 9:30 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Creative Studio</div>
+                        </div>
+                        <p>Unleash your creativity while sipping on fine wine. No experience needed - our instructor will guide you through creating your own masterpiece.</p>
+                        <div class="event-buttons">
+                            <a href="#" class="btn">RSVP Now</a>
+                            <a href="#" class="btn btn-outline">More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="special">
+                    <div class="event-item-image">
+                        <img src="https://picsum.photos/600/400?random=3" alt="Annual Gala">
+                    </div>
+                    <div class="event-item-content">
+                        <h3>Annual Bloom Gala</h3>
+                        <div class="event-meta">
+                            <div><i class="fas fa-calendar-alt"></i> July 10, 2025</div>
+                            <div><i class="fas fa-clock"></i> 7:00 PM - 11:00 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Grand Ballroom</div>
+                        </div>
+                        <p>Our biggest event of the year! Dress to impress for an evening of dancing, fine dining, and celebration of our wonderful community.</p>
+                        <div class="event-buttons">
+                            <a href="#" class="btn">RSVP Now</a>
+                            <a href="#" class="btn btn-outline">More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="workshop">
+                    <div class="event-item-image">
+                        <img src="https://picsum.photos/600/400?random=4" alt="Cooking Class">
+                    </div>
+                    <div class="event-item-content">
+                        <h3>Italian Cooking Class</h3>
+                        <div class="event-meta">
+                            <div><i class="fas fa-calendar-alt"></i> August 5, 2025</div>
+                            <div><i class="fas fa-clock"></i> 5:30 PM - 8:30 PM</div>
+                            <div><i class="fas fa-map-marker-alt"></i> Culinary Arts Center</div>
+                        </div>
+                        <p>Learn to make authentic Italian pasta from scratch with Chef Marco. Includes dinner with wine pairing and recipes to take home.</p>
+                        <div class="event-buttons">
+                            <a href="#" class="btn">RSVP Now</a>
+                            <a href="#" class="btn btn-outline">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Never Miss an Event</h2>
+                <p>Subscribe to get updates about upcoming events</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+                <div id="subscription-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Bloom</h2>
+                <p>Connect. Create. Celebrate.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bloom Social Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Event filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const eventItems = document.querySelectorAll('.event-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    eventItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

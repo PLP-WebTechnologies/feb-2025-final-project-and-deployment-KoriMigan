@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Bloom Social Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Bloom</h1>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="events-header">
+            <h1>Join Our Community</h1>
+            <p>Become part of the Bloom family today</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Ready to join our community or have questions about Bloom? We'd love to hear from you!</p>
+                    <p>Our team is happy to answer any questions you might have about membership, events, or anything else.</p>
+                    
+                    <div class="contact-details">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Social Street, Community City, CC 10101</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@bloomsocial.com</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-clock"></i>
+                            <span>Office Hours: Mon-Fri 10am-6pm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>Membership Application</h2>
+                    <form id="join-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Primary Interest</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="social">Social Events</option>
+                                <option value="workshops">Workshops & Classes</option>
+                                <option value="networking">Professional Networking</option>
+                                <option value="all">Everything!</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell us about yourself</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Why Our Members Love Bloom</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <div class="quote">"Joining Bloom was the best decision I made after moving to the city. I've made lifelong friends and discovered new passions."</div>
+                    <div class="author">- David M.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"The events are always so well organized and diverse. There's truly something for everyone at Bloom."</div>
+                    <div class="author">- Priya K.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="quote">"I was nervous about joining at first, but the welcoming atmosphere made me feel at home immediately."</div>
+                    <div class="author">- Jamal R.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Bloom</h2>
+                <p>Connect. Create. Celebrate.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bloom Social Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('join-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your application! We will review it and get back to you within 3 business days.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
